@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* root mentiqi */
+
+.light {
+  --headerBg: white;
+  --textColor : black;
+}
+
+.dark {
+  --headerBg: #000;
+  --textColor : white;
+}
+
+header {
+  width: 100%;
+  height: 12vh;
+  background-color: var(--headerBg);
+}
+
+header li{
+   color: var(--textColor);
+}
+
+
+.darkMode{
+  
+}
+
+
+
+.hero {
+  width: 100%;
+  height: 70vh;
+}
+
+.left-side {
+  width: 100%;
+  height: 100%;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-side h1 {
+  color: blue;
+}
+
+
+
+header ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parent-li {
+  position: relative;
+}
+
+.child-ul {
+  position: absolute;
+  width: 160%;
+  height: 10vh;
+  top: 40px;
+  left: 0;
+  background-color: blue;
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.child-ul p,
+h1 {
+  font-size: 10px;
+}
+
+.parent-li:hover .child-ul {
+  opacity: 1;
+}
