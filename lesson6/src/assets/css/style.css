@@ -1,0 +1,19 @@
+body {
+  background-color: chartreuse;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: black;
+}
+
+a {
+  color: red;
+  &:hover {
+    color: blue;
+  }
+}
+
