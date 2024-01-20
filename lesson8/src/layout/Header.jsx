@@ -36,6 +36,9 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink to="/wishlist">Wishlist</NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink to="/blogs">Blogs</NavLink>
+              </li>
             </ul>
             <form className="d-flex" role="search">
               <input
